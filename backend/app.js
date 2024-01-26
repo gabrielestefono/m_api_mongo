@@ -11,6 +11,11 @@ app.use(cors());
 
 app.use(express.json());
 
+// Routes
+const routes = require('./routes/router');
+
+app.use('/api', routes);
+
 app.listen(port, function(){
 	console.log(`Rodando http://localhost:${port}`)
 })
