@@ -18,4 +18,20 @@ GET http://localhost:3000/api/services/65b8c6b4de9e68e579976c92
 
 ###
 
-DELETE http://localhost:3000/api/services/65b8c6b4de9e68e579976c92
+DELETE http://localhost:3000/api/services/65b8c66f44fcbc3a7dbc40f1###
+
+###
+
+PUT http://localhost:3000/api/services/65b8cf6321cab21ed22dd887
+Content-Type: application/json
+
+{
+	"name": "TESTE ATUALIZAÇÃO",
+	"description": "Alguma descrição",
+	"price": 1400,
+	"image": "https://fakeimg.pl/600x400"
+}
+
+###
+
+GET http://localhost:3000/api/party
