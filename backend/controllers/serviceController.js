@@ -1,7 +1,5 @@
 const { Service: ServiceModel } = require('../models/service');
 
-const serviceController = {
-
-}
+const serviceController = {}
 
 module.exports = serviceController;
