@@ -34,4 +34,57 @@ Content-Type: application/json
 
 ###
 
-GET http://localhost:3000/api/party
+POST http://localhost:3000/api/parties
+Content-Type: application/json
+
+{
+	"title": "Meu evento",
+	"author": "Gabriel",
+	"description": "Uma festa de aniversário",
+	"budget": 5000,
+	"image": "https://fakeimg.pl/600x400",
+	"services": [
+		{
+			"name": "Algum serviço",
+			"description": "Alguma descrição",
+			"price": 1400,
+			"image": "https://fakeimg.pl/600x400"
+		}
+	]
+}
+
+###
+
+GET http://localhost:3000/api/parties
+Content-Type: application/json
+
+### 
+
+GET http://localhost:3000/api/parties/65ba3e8edff3021bcfffbb58
+Content-Type: application/json
+
+###
+
+PUT http://localhost:3000/api/parties/65ba4578e443d40ea0bc8bc6
+Content-Type: application/json
+
+{
+	"title": "Meu evento 3",
+	"author": "Gabriel",
+	"description": "Uma festa de aniversário",
+	"budget": 5000,
+	"image": "https://fakeimg.pl/600x400",
+	"services": [
+		{
+			"name": "Algum serviço",
+			"description": "Alguma descrição",
+			"price": 1400,
+			"image": "https://fakeimg.pl/600x400"
+		}
+	]
+}
+
+###
+
+DELETE http://localhost:3000/api/parties/65ba4578e443d40ea0bc8bc6
+Content-Type: application/json
